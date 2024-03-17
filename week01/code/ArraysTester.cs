@@ -1,4 +1,9 @@
+using System.Collections;
+
 public static class ArraysTester {
+    public static object myList { get; private set; }
+    public static object index { get; private set; }
+
     /// <summary>
     /// Entry point for the tests
     /// </summary>
@@ -65,7 +70,15 @@ public static class ArraysTester {
         // Remember: Using comments in your program, write down your process for solving this problem
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
-        data.GetRange(3, data.Count -3);
-        
+       
+
+       int rotate = amount;
+       int[] results = new int[data.Count];
+
+       for (int i = 0; i < data.Count; i++)
+       {
+            results[i] = data[(i + rotate) % amount.Count];
+       }
+
     }
 }
