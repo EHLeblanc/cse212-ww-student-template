@@ -45,7 +45,8 @@ public class Maze {
     /// Helper function to determine if the (x,y) position is at 
     /// the end of the maze.
     /// </summary>
-    public bool IsEnd(int x, int y) {
+    public bool IsEnd(int x, int y) 
+    {
         return Data[y * Height + x] == 2;
     }
 
