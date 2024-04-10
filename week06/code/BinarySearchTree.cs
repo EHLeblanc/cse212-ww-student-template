@@ -66,6 +66,10 @@ public class BinarySearchTree : IEnumerable<int> {
 
     private void TraverseBackward(Node? node, List<int> values) {
         // TODO Problem 3
+        foreach(var value in values.Reversed())
+        {
+	        Console.WriteLine(value);
+        }
     }
 
     /// <summary>
